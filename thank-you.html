@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order confirmed — Nova Audio</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand__mark">◎</span> Nova Audio</a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a class="cart-link" href="checkout.html">🛒 Cart <span class="cart-count" id="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="confirm" id="confirmation"><!-- rendered by main.js --></div>
+
+      <!-- Post-purchase upsell -->
+      <div class="container" style="margin-top:46px;max-width:760px">
+        <div class="offer">
+          <h2 style="margin-bottom:6px">Complete your setup</h2>
+          <p style="opacity:.92">Add a Nova Boom Speaker to your order within 15 minutes and save an extra 10%.</p>
+          <a class="btn btn--accent btn--lg" href="products.html">Add the speaker →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border:0;margin:0;padding:0">
+        <span>© 2026 Nova Audio. All rights reserved.</span>
+        <span>Demo storefront — no real payments are processed.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

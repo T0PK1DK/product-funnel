@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Test scratch artifacts (created by tests/, safe to delete)
+tests/.cdp/
+tests/.cp/
+tests/.cpA/
+tests/.chromeprofile/
+tests/.serverpid
+tests/*.png
+tests/out*.html
+tests/o*.html
+tests/e*.txt
+tests/err*.txt
+
+# Logs
+*.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
