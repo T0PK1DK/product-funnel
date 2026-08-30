@@ -41,6 +41,11 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; }
 h3 { font-size: 1.15rem; font-weight: 700; }
 p { margin: 0 0 1rem; }
 
+/* Ad slots — reserved space so ads don't shift layout */
+.ad-slot { width: 100%; overflow: hidden; }
+.ad-leaderboard { min-height: 90px; }
+.ad-rectangle { min-height: 250px; }
+
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 .section { padding: 72px 0; }
 .section--soft { background: var(--soft); }

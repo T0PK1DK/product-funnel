@@ -41,6 +41,11 @@
     .center .hr-gold{margin-left:auto; margin-right:auto;}
     .muted{color:var(--muted);}
 
+    /* Ad slots — reserved space so ads don't shift layout */
+    .ad-slot{width:100%; overflow:hidden;}
+    .ad-leaderboard{min-height:90px;}
+    .ad-rectangle{min-height:250px;}
+
     /* Buttons */
     .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; font:inherit; font-weight:700;
       cursor:pointer; border:0; border-radius:999px; padding:15px 30px; transition:transform .18s ease, box-shadow .18s ease, background .18s ease; white-space:nowrap;}
@@ -273,6 +278,11 @@
       </nav>
     </div>
   </header>
+
+  <div class="ad-slot ad-leaderboard">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6396285394716461" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
   <!-- 2) HERO -->
   <section class="hero" id="top">
@@ -588,6 +598,11 @@
       </div>
     </div>
   </section>
+
+  <div class="ad-slot ad-rectangle">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6396285394716461" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
   <!-- 12) FOOTER -->
   <footer class="footer">
