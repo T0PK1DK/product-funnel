@@ -45,6 +45,11 @@ p { margin: 0 0 1rem; }
 .ad-slot { width: 100%; overflow: hidden; }
 .ad-leaderboard { min-height: 90px; }
 .ad-rectangle { min-height: 250px; }
+.ad-label {
+  font-size: .68rem; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted); text-align: center;
+  margin: 0; padding: 8px 0 4px;
+}
 
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 .section { padding: 72px 0; }
