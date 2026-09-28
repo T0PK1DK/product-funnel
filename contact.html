@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6396285394716461"
+     crossorigin="anonymous"></script>
+  <title>Contact — The Midas Law</title>
+  <meta name="description" content="Contact The Midas Law. A message form is on this page; a working inbox is not connected yet." />
+  <link rel="canonical" href="https://www.themidaslawbook.com/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/content.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      <a class="wordmark" href="index.html">The <b>Midas</b> Law</a>
+      <nav class="nav__links">
+        <a class="hide-sm" href="articles/">Articles</a>
+        <a href="glossary.html">Glossary</a>
+        <a class="hide-sm" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <hr class="hr-gold" />
+    <p>This page is the contact point for The Midas Law. There is no working public email address on this domain yet (the domain does not currently accept mail), so this form does not send a message anywhere.</p>
+
+    <!-- TODO(King): Connect this form to a working inbox or form backend once MX records exist.
+         Do not publish hello@themidaslawbook.com or privacy@themidaslawbook.com until those mailboxes can receive mail. -->
+
+    <form class="form" id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required />
+
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button class="btn" type="submit">Submit</button>
+      <p class="todo">Status: form UI only — not wired to an inbox. TODO: connect a real backend or mailbox before treating submissions as received.</p>
+    </form>
+    <div class="form-status" id="contactStatus" role="status">This form is not connected to an inbox yet, so the message was not sent. Check back after contact is set up.</div>
+
+    <p class="note">For the Privacy Policy, see <a href="privacy.html">privacy.html</a>. For the product overview, see the <a href="index.html">home page</a>.</p>
+
+    <footer class="footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </footer>
+  </main>
+  <script>
+    (function(){
+      var form = document.getElementById('contactForm');
+      var status = document.getElementById('contactStatus');
+      if (!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        form.style.display = 'none';
+        status.style.display = 'block';
+      });
+    })();
+  </script>
+</body>
+</html>
