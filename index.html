@@ -257,14 +257,14 @@
   <!-- 1) TICKER BAR -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker__track">
-      <span>Instant digital download</span>
+      <span>Free digital download</span>
       <span>44-page Guide + 17-page Workbook</span>
       <span>Interactive web app: Budget · Investing · Debt · Market · Glossary</span>
-      <span>Lifetime updates</span>
-      <span>Instant digital download</span>
+      <span>Free HTML chapters and glossary</span>
+      <span>Free digital download</span>
       <span>44-page Guide + 17-page Workbook</span>
       <span>Interactive web app: Budget · Investing · Debt · Market · Glossary</span>
-      <span>Lifetime updates</span>
+      <span>Free HTML chapters and glossary</span>
     </div>
   </div>
 
@@ -278,7 +278,7 @@
         <a href="articles/">Articles</a>
         <a href="glossary.html">Glossary</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-gold" href="#get">Get the guide</a>
+        <a class="btn btn-gold" href="#get">Free download</a>
       </nav>
     </div>
   </header>
@@ -298,7 +298,7 @@
       <p class="tagline">Turn financial confusion into a step-by-step climb.</p>
       <p class="sub">A plain-English guide, a workbook, and an interactive web app that take you from breaking the poverty premium to escape velocity — one floor at a time.</p>
       <div class="cta-row">
-        <a class="btn btn-gold btn-lg" href="#get">Get instant access — $19</a>
+        <a class="btn btn-gold btn-lg" href="#get">Read the free guide</a>
         <a class="btn btn-ghost btn-lg" href="#floors">Look inside</a>
       </div>
       <p class="trust">44-page guide · 17-page workbook · web app coming soon · lifetime updates</p>
@@ -551,7 +551,7 @@
       <div class="faq">
         <details class="reveal" open><summary>What exactly do I get?</summary><p>Two ebooks — The Guide (44 pages) and The Workbook (17 pages). Both PDFs are available to download on this page. Selected chapters and the guide’s glossary are also published as web pages. An interactive web app with five tools is planned and is labeled coming soon — it is not live yet.</p></details>
         <details class="reveal"><summary>Do I need any finance background?</summary><p>None. It's written in plain English for beginners and first-gen wealth builders, with a glossary so no jargon trips you up.</p></details>
-        <details class="reveal"><summary>Is this a course or subscription?</summary><p>No. There are no cohorts, no calls, and no monthly fee. The site currently shows a $19 one-time price and also offers the PDFs as free downloads.</p></details>
+        <details class="reveal"><summary>Is this a course or subscription?</summary><p>No. There are no cohorts, no calls, and no monthly fee. The Guide and Workbook are free PDF downloads on this page.</p></details>
         <details class="reveal"><summary>What format are the books?</summary><p>PDF, so they read cleanly on your phone, tablet, or computer. Free HTML chapters are on the articles page.</p></details>
         <details class="reveal"><summary>How do I access the web app?</summary><p>You don’t, yet. The web app is coming soon. The /app URL is only a coming-soon notice. Use the glossary and free chapters on this site until it ships.</p></details>
         <details class="reveal"><summary>Is this financial advice?</summary><p>No — it's education. It gives you the framework; your money decisions are your own (and for big ones, talk to a licensed professional).</p></details>
@@ -559,26 +559,24 @@
     </div>
   </section>
 
-  <!-- 11) GET IT / PRICING -->
+  <!-- 11) FREE DOWNLOADS -->
   <section class="section get" id="get">
     <div class="container">
-      <h2 class="display reveal">Get <span class="gold-text">The Midas Law</span></h2>
-      <p class="lead center reveal">The Guide and Workbook PDFs are on this page. The web app is coming soon.</p>
+      <h2 class="display reveal">Read <span class="gold-text">The Midas Law</span> free</h2>
+      <p class="lead center reveal">The Guide and Workbook are free PDF downloads. The web app is coming soon.</p>
       <div class="price-card reveal">
-        <div class="pp gold-text">$19 <small>one-time</small></div>
-        <p class="once">The Guide (44pg) + Workbook (17pg) + Web App (5 tabs)</p>
+        <div class="pp gold-text">Free</div>
+        <p class="once">The Guide (44pg) + Workbook (17pg). Web app coming soon.</p>
         <div class="incl">
-          <span>⬇ Instant download</span>
-          <span>♾ Lifetime updates</span>
+          <span>⬇ Free PDF download</span>
+          <span>📖 Free HTML chapters</span>
           <span>📱 Any device</span>
-          <span>🛡 30-day money-back</span>
         </div>
-        <form class="get-form" id="applyForm" novalidate>
-          <input type="email" name="email" placeholder="Your best email" required />
-          <button type="submit" class="btn btn-gold">Get instant access →</button>
-        </form>
-        <p class="get-note">PDFs are available to download on this page. The email field does not process payment and is not connected to a mailbox.</p>
-        <div class="get-success" id="applySuccess">The Guide and Workbook PDFs are on this page under What You Get. The email field does not send files or charge a card.</div>
+        <div class="cta-row" style="margin-top:22px;justify-content:center;">
+          <a class="btn btn-gold" href="assets/books/The-Midas-Law-Guide.pdf" target="_blank" rel="noopener">Download the Guide (PDF)</a>
+          <a class="btn btn-ghost" href="assets/books/The-Midas-Law-Workbook.pdf" target="_blank" rel="noopener">Download the Workbook (PDF)</a>
+        </div>
+        <p class="get-note">No payment, no checkout, no email required. You can also <a href="articles/" style="color:var(--gold-2);">read free chapters</a> or open the <a href="glossary.html" style="color:var(--gold-2);">glossary</a>.</p>
       </div>
     </div>
   </section>
@@ -651,18 +649,6 @@
       reset();
     })();
 
-    // Email capture (demo, client-side only)
-    (function(){
-      var form = document.getElementById('applyForm');
-      if (!form) return;
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        if (!form.email.checkValidity()) { form.reportValidity(); return; }
-        form.style.display = 'none';
-        document.querySelector('.get-note').style.display = 'none';
-        document.getElementById('applySuccess').style.display = 'block';
-      });
-    })();
   </script>
 </body>
 </html>

@@ -1,10 +1,22 @@
 User-agent: AdsBot-Google
 Allow: /
+Disallow: /nova-audio.html
+Disallow: /products.html
+Disallow: /checkout.html
+Disallow: /thank-you.html
 
 User-agent: Mediapartners-Google
 Allow: /
+Disallow: /nova-audio.html
+Disallow: /products.html
+Disallow: /checkout.html
+Disallow: /thank-you.html
 
 User-agent: *
 Allow: /
+Disallow: /nova-audio.html
+Disallow: /products.html
+Disallow: /checkout.html
+Disallow: /thank-you.html
 
 Sitemap: https://www.themidaslawbook.com/sitemap.xml
