@@ -49,9 +49,15 @@ assert("debt chapter uses avalanche", /The Avalanche Method/.test(debt));
 assert("first-gen chapter uses Family Fund", /the Family Fund/.test(firstGen));
 assert("articles hub lists four chapters", /poverty-premium\.html/.test(articlesIndex) && /first-generation-wealth\.html/.test(articlesIndex));
 assert("app page is coming soon, not a fake app", /Coming soon/.test(app) && !/Launch the Web App/.test(app));
-assert("$19 price unchanged", /\$19/.test(index));
+assert("no $19 on home", !/\$19/.test(index));
+assert("no money-back guarantee", !/money-back/.test(index + about + terms));
+assert("no Get instant access", !/Get instant access/.test(index));
+assert("no fake email/payment form", !/id="applyForm"/.test(index));
+assert("free download wording", /Read the free guide/.test(index) && /Free download/.test(index));
 assert("guide PDF still offered", /assets\/books\/The-Midas-Law-Guide\.pdf/.test(index));
 assert("workbook PDF still offered", /assets\/books\/The-Midas-Law-Workbook\.pdf/.test(index));
+assert("nova demo pages removed", !fs.existsSync(path.join(root, "nova-audio.html")) && !fs.existsSync(path.join(root, "products.html")) && !fs.existsSync(path.join(root, "checkout.html")) && !fs.existsSync(path.join(root, "thank-you.html")));
+assert("robots disallows nova demo paths", /Disallow: \/nova-audio\.html/.test(robots) && /Disallow: \/checkout\.html/.test(robots));
 
 const termCount = (glossary.match(/class="term"/g) || []).length;
 assert("glossary has 30 printed entries (401(k)/IRA combined)", termCount === 30);
